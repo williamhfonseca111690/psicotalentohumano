@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsicoTalentoHumano - Potencia tu carrera profesional</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Header con logo y redes sociales -->
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html" aria-label="Ir a la página de inicio">
+        <img src="images/logo.png" alt="Logo PsicoTalentoHumano" class="logo">
+      </a>
+    </div>
+    <div class="social-media">
+      <a href="https://www.instagram.com/psico_talentohumano/#/" target="_blank" rel="noopener noreferrer" aria-label="Ir al Instagram de PsicoTalentoHumano">
+        <img src="images/instagram.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.tiktok.com/@psico_talentohumano" target="_blank" rel="noopener noreferrer" aria-label="Ir al TikTok de PsicoTalentoHumano">
+        <img src="images/tiktok.png" alt="TikTok" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/@psicotalentohumano" target="_blank" rel="noopener noreferrer" aria-label="Ir al canal de YouTube de PsicoTalentoHumano">
+        <img src="images/youtube.png" alt="YouTube" class="social-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="main-text">Conquista tus metas<br>laborales en 2025</p>
+      <span class="divider" aria-hidden="true"></span>
+      <p class="sub-text">El futuro laboral que mereces está a un clic de distancia</p>
+      <a href="#" class="discover-button" aria-label="Descubre cómo potenciar tu carrera profesional">¡Descubre cómo!</a>
+    </div>
+  </section>
+
+  <!-- Sección de servicios -->
+  <section class="services-section">
+    <div class="services-header">
+      <h1 class="title">Potencia tu futuro laboral</h1>
+      <p class="subtitle">con Adriana Beltrán, fundadora de @psico_talentohumano <br> y experta en desarrollo profesional</p>
+    </div>
+
+    <div class="services-content">
+      <!-- Subsección #1: Margen Izquierdo -->
+      <div class="services-margin-left"></div>
+
+      <!-- Subsección #2: Contenido Izquierdo -->
+      <div class="services-left">
+        <div class="service-item">
+          <h3>🚀 Evolución Profesional</h3>
+          <p>Consigue tu meta laboral con 5 sesiones: análisis completo de tu perfil, CV optimizado, LinkedIn estratégico, preparación avanzada para entrevistas y acompañamiento continuo.</p>
+        </div>
+        <div class="service-item">
+          <h3>🎯 Preparación Integral</h3>
+          <p>Destácate en el mercado laboral con 4 sesiones estratégicas: rediseño de CV, creación de perfil profesional en LinkedIn, simulación de entrevistas y cierre con orientación personalizada.</p>
+        </div>
+        <div class="service-item">
+          <h3>✨ Impulso Estratégico</h3>
+          <p>Refuerza tu perfil con 3 sesiones clave: actualización de tu CV, optimización de LinkedIn y preparación para entrevistas.</p>
+        </div>
+      </div>
+
+      <!-- Subsección #3: Separador -->
+      <div class="services-separator"></div>
+
+      <!-- Subsección #4: Video con Botón de Play -->
+      <div class="services-video">
+        <div class="video-container" style="position: relative; display: inline-block;">
+          <video id="videoElement" autoplay muted loop playsinline>
+            <source src="videos/Video-Hero.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+          <a href="#" id="playButton" class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" onclick="playVideo(); return false;">
+            <img src="images/Play.png" alt="Play Video" style="max-width: 80px; height: auto;">
+          </a>
+        </div>
+      </div>
+
+      <!-- Subsección #5: Formulario -->
+      <div class="services-form">
+        <h3>¿Quieres destacar laboralmente?</h3>
+        <p>Déjame tus datos</p>
+        <form>
+          <!-- Nombre y Apellido -->
+          <div class="form-row">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre *" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido *" required>
+          </div>
+
+          <!-- Correo Electrónico -->
+          <div class="form-row">
+            <input type="email" id="email" name="email" placeholder="Correo electrónico *" required>
+          </div>
+
+          <!-- Selección de País -->
+          <div class="form-row">
+            <select id="pais" name="pais" required>
+              <option value="" disabled selected>País *</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Honduras">Honduras</option>
+              <option value="México">México</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Perú">Perú</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Estados Unidos">Estados Unidos</option>
+              <option value="España">España</option>
+            </select>
+          </div>
+
+          <!-- Código de País y Whatsapp -->
+          <div class="form-row">
+            <input type="text" id="codigoPais" name="codigoPais" placeholder="Código *" required>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Whatsapp *" required>
+          </div>
+
+          <!-- Comentarios/Dudas -->
+          <div class="form-row">
+            <textarea id="comentarios" name="comentarios" placeholder="Cuéntame cómo deseas destacar o si tienes alguna duda *" required></textarea>
+          </div>
+
+			<!-- Texto: * Requerido -->
+			<p class="form-required-text">* Requerido</p>
+
+          <!-- Botón Enviar -->
+          <div class="form-row">
+            <button type="submit" class="submit-btn">Quiero Destacar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Subsección #6: Separador -->
+      <div class="services-separator"></div>
+    </div>
+  </section>
+
+  <script src="scripts/form.js"></script>
+  <script>
+    function playVideo() {
+      const video = document.getElementById('videoElement');
+      const playButton = document.getElementById('playButton');
+      video.currentTime = 0; // Reinicia el video al inicio
+      video.muted = false;
+      video.controls = true;
+      video.play();
+      playButton.style.display = 'none'; // Oculta el botón de reproducción
+    }
+  </script>
+</body>
+</html>
